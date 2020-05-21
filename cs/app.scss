@@ -19,6 +19,8 @@ html, body, h1, h2, h3, h4, h5, p {
     margin: 0 auto;
 }
 
+
+// Navigation
 #navBar {
     width: 100%;
     background: white;
@@ -53,6 +55,29 @@ html, body, h1, h2, h3, h4, h5, p {
         }
         svg {
             width: 250px;
+        }
+    }
+}
+
+// Header
+#header {
+    background: #F7F7F7;
+    background: linear-gradient(white, #F7F7F7);
+    padding: 100px 0;
+    .headerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-size: 2rem;
+            color: $darkGray;
+            font-weight: 400;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.125rem;
+            color: $primary;
+            font-weight: 400;
         }
     }
 }
