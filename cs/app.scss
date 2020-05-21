@@ -1,5 +1,6 @@
 // Colors
 $primary: #14A874;
+$darkGray: #555555;
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
@@ -26,5 +27,21 @@ html, body, h1, h2, h3, h4, h5, p {
         justify-content: space-between;
         align-items: center;
         padding: 20px 0;
+        .navItem {
+            color: $darkGray;
+            font-size: 1rem;
+            text-decoration: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+        .btn-calc {
+            border: 2px solid $darkGray;
+            padding: 10px 20px;
+            border-radius: 3px;
+            color: $darkGray;
+            font-size: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
     }
 }
