@@ -33,7 +33,6 @@ html, body, h1, h2, h3, h4, h5, p {
 
 #navBar .navBar .navItem {
   color: #555555;
-  font-size: 1rem;
   text-decoration: none;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -44,8 +43,11 @@ html, body, h1, h2, h3, h4, h5, p {
   padding: 10px 20px;
   border-radius: 3px;
   color: #555555;
-  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+#navBar .navBar svg {
+  width: 250px;
 }
 /*# sourceMappingURL=app.css.map */
