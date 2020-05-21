@@ -45,13 +45,45 @@
         </div>
     </header>
 
-    <!-- Calculator -->
+    <!-- Calculator Section -->
     <main id="calculator">
         <div class="container">
-            <p>This is where the nutrient calculator will be placed.</p>
+
+            <!-- Calculator -->
+            <form name="ppmcalculator" id="ppmcalculator">
+
+                <!-- Calculator Input Area -->
+                <div class="calcArea">
+                    <div class="calcInputs">
+                            <h2>Container Label</h2>
+                            <p class="helper">If the information is not available on the container, or you use dry nutrients, do not change the default values.</p>
+                            <div class="singleInput">
+                                <h3>Net Weight</h3>
+                                <input name="containergrams" type="text" class="inputBox" id="containergrams" value="1">
+                                <p class="helper2">*Calculated in grams</p>
+                            </div>
+                            <div class="singleInput">
+                                <h3>Liquid Volume</h3>
+                                <input name="containermls" type="text" class="inputBox" id="containermls2" value="1">
+                                <p class="helper2">*Calculated in milliliters</p>
+                            </div>
+                    </div>
+
+                    <!-- Calculator Result Area -->
+                    <div class="calcResults">
+                        <div class="resultBox">
+                            <h2>Nutrient Results</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+
         </div>
     </main>
 
 </body>
+
+<script src="js/app.js"></script>
 
 </html>
