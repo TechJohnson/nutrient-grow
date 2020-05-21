@@ -32,6 +32,10 @@ html, body, h1, h2, h3, h4, h5, p {
             text-decoration: none;
             padding: 10px 20px;
             text-transform: uppercase;
+            transition: all ease 0.3s;
+            &:hover {
+                color: $primary;
+            }
         }
         .btn-calc {
             border: 2px solid $darkGray;

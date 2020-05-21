@@ -36,6 +36,12 @@ html, body, h1, h2, h3, h4, h5, p {
   text-decoration: none;
   padding: 10px 20px;
   text-transform: uppercase;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+#navBar .navBar .navItem:hover {
+  color: #14A874;
 }
 
 #navBar .navBar .btn-calc {
