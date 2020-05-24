@@ -86,12 +86,104 @@
                             <h3>Urea Nitrogen (NH2)</h3>
                             <input type="text" name="urea" class="inputBox" id="urea">
                         </div>
+                        <h2>Elements</h2>
+                        <div class="singleInput">
+                            <h3>Phosphorus (P)</h3>
+                            <input type="text" name="percentp205" class="inputBox" id="percentp2o52">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Potassium (K)</h3>
+                            <input type="text" name="percentk2o" class="inputBox" id="percentk2o2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Magnesium (Mg)</h3>
+                            <input type="text" name="percentmg" class="inputBox" id="percentmg2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Sulfur (S)</h3>
+                            <input type="text" name="percents" class="inputBox" id="percents2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Calcium (Ca)</h3>
+                            <input type="text" name="percentca" class="inputBox" id="percentca2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Iron (Fe)</h3>
+                            <input type="text" name="percentfe" class="inputBox" id="percentfe2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Boron (B)</h3>
+                            <input type="text" name="percentb" class="inputBox" id="percentb2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Manganese (Mn)</h3>
+                            <input type="text" name="percentmn" class="inputBox" id="percentmn3">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Zinc (Zn)</h3>
+                            <input type="text" name="percentzn" class="inputBox" id="percentzn2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Molybdenum (Mo)</h3>
+                            <input type="text" name="percentmo" class="inputBox" id="percentmo2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Sodium (Na)</h3>
+                            <input type="text" name="percentna" class="inputBox" id="percentna2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Copper (Cu)</h3>
+                            <input type="text" name="percentcu" class="inputBox" id="percentcu2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Chlorine (Cl)</h3>
+                            <input type="text" name="percentcl" class="inputBox" id="percentcl2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Cobalt (Co)</h3>
+                            <input type="text" name="percentco" class="inputBox" id="percentco2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Silicon (Si)</h3>
+                            <input type="text" name="percentsi" class="inputBox" id="percentsi2">
+                        </div>
+                        <div class="singleInput">
+                            <h3>Selenium (Se)</h3>
+                            <input type="text" name="percentse" class="inputBox" id="percentse2">
+                        </div>
                     </div>
 
                     <!-- Calculator Result Area -->
                     <div class="calcResults">
                         <div class="resultBox">
                             <h2>Nutrient Results</h2>
+                            <hr>
+
+                            <div class="whiteLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p>left</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>right</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grayLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p>left</p>
+                                    </div>
+                                    <div class="right">
+                                        <p>right</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <input onclick="ppmcalcall();KW_calcForm('resultgramsperml',100000,-1,'#resultgramsperml');KW_calcForm('resultppmfe',10000,-1,'#resultppmfe');KW_calcForm('resultppmb',10000,-1,'#resultppmb');KW_calcForm('resultppmmn',10000,-1,'#resultppmmn');KW_calcForm('resultppmzn',10000,-1,'#resultppmzn');KW_calcForm('resultppmmo',10000,-1,'#resultppmmo');KW_calcForm('resultppmna',10000,-1,'#resultppmna');KW_calcForm('resultppmcu',10000,-1,'#resultppmcu');KW_calcForm('resultppmcl',10000,-1,'#resultppmcl');KW_calcForm('resultppmco',10000,-1,'#resultppmco');KW_calcForm('resultppmsi',10000,-1,'#resultppmsi');KW_calcForm('resultppmse',10000,-1,'#resultppmse')" type="button" value="Calculate" name="ppmcalcall_button2" class="calcBtn">
+
                         </div>
                     </div>
                 </div>

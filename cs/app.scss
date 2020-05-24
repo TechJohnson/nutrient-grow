@@ -137,6 +137,22 @@ html, body, h1, h2, h3, h4, h5, p {
                     font-size: 1.375rem;
                     color: $darkGray;
                 }
+                .calcBtn {
+                    background: $primary;
+                    color: white;
+                    padding: 10px 25px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 1.125rem;
+                    text-transform: uppercase;
+                    display: flex;
+                    margin: 0 auto;
+                }
+                hr {
+                    padding: 0;
+                    margin: 20px 0;
+                    border: 1px solid #EEEDED;
+                }
             }
         }
     }
