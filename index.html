@@ -89,7 +89,7 @@
                         <h2>Elements</h2>
                         <div class="singleInput">
                             <h3>Phosphorus (P)</h3>
-                            <input type="text" name="percentp205" class="inputBox" id="percentp2o52">
+                            <input type="text" name="percentp2o5" class="inputBox" id="percentp2o52">
                         </div>
                         <div class="singleInput">
                             <h3>Potassium (K)</h3>
@@ -158,14 +158,23 @@
                         <div class="resultBox">
                             <h2>Nutrient Results</h2>
                             <hr>
+                            
+                            <div class="split">
+                                <div class="left">
+                                    <h3>Nitrogen</h3>
+                                </div>
+                                <div class="right">
+                                    <h3>PPM</h3>
+                                </div>
+                            </div>
 
                             <div class="whiteLine">
                                 <div class="split">
                                     <div class="left">
-                                        <p>left</p>
+                                        <p class="resultTitle">Nitrate (NO3)</p>
                                     </div>
                                     <div class="right">
-                                        <p>right</p>
+                                        <input name="resultppmno3display" type="text" id="resultppmno3display" class="result" readonly>
                                     </div>
                                 </div>
                             </div>
@@ -173,25 +182,268 @@
                             <div class="grayLine">
                                 <div class="split">
                                     <div class="left">
-                                        <p>left</p>
+                                        <p class="resultTitle">Ammonium (NH4)</p>
                                     </div>
                                     <div class="right">
-                                        <p>right</p>
+                                        <input name="resultppmnh4display" type="text" id="resultppmnh4display" class="result" readonly>
                                     </div>
                                 </div>
                             </div>
 
-                            <hr>
-                            <input onclick="ppmcalcall();KW_calcForm('resultgramsperml',100000,-1,'#resultgramsperml');KW_calcForm('resultppmfe',10000,-1,'#resultppmfe');KW_calcForm('resultppmb',10000,-1,'#resultppmb');KW_calcForm('resultppmmn',10000,-1,'#resultppmmn');KW_calcForm('resultppmzn',10000,-1,'#resultppmzn');KW_calcForm('resultppmmo',10000,-1,'#resultppmmo');KW_calcForm('resultppmna',10000,-1,'#resultppmna');KW_calcForm('resultppmcu',10000,-1,'#resultppmcu');KW_calcForm('resultppmcl',10000,-1,'#resultppmcl');KW_calcForm('resultppmco',10000,-1,'#resultppmco');KW_calcForm('resultppmsi',10000,-1,'#resultppmsi');KW_calcForm('resultppmse',10000,-1,'#resultppmse')" type="button" value="Calculate" name="ppmcalcall_button2" class="calcBtn">
+                            <div class="whiteLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Urea (NH2)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmnh2display" type="text" id="resultppmnh2display" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="grayLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Nitrogen Total</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmndisplay" type="text" id="resultppmndisplay" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="pt-10">Elements</h3>
+
+                            <div class="whiteLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Phosphorus (P)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmpdisplay" type="text" id="resultppmpdisplay" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grayLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Potassium (K)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmkdisplay" type="text" id="resultppmkdisplay" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="whiteLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Magnesium (Mg)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmmgdisplay" type="text" id="resultppmmgdisplay" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grayLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Sulfur (S)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmsdisplay" type="text" id="resultppmsdisplay" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="whiteLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Calcium (Ca)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmcadisplay" type="text" id="resultppmcadisplay" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grayLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Iron (Fe)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmfe" type="text" id="resultppmfe2" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="whiteLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Boron (B)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmb" type="text" id="resultppmb2" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grayLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Manganese (Mn)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmmn" type="text" id="resultppmmn2" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="whiteLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Zinc (Zn)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmzn" type="text" id="resultppmzn2" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grayLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Molybdenum (Mo)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmmo" type="text" id="resultppmmo2" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="whiteLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Sodium (Na)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmna" type="text" id="resultppmna4" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grayLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Copper (Cu)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmcu" type="text" id="resultppmcu2" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="whiteLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Chlorine (Cl)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmcl" type="text" id="resultppmcl2" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="grayLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Cobalt (Co)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmco" type="text" id="resultppmco2" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="whiteLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Silicon (Si)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmsi" type="text" id="resultppmsi2" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grayLine">
+                                <div class="split">
+                                    <div class="left">
+                                        <p class="resultTitle">Selenium (Se)</p>
+                                    </div>
+                                    <div class="right">
+                                        <input name="resultppmse" type="text" id="resultppmse2" class="result" readonly>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="split pt-10">
+                                <div class="left">
+                                    <h3>Total Liquid Weight</h3>
+                                </div>
+                                <div class="right">
+                                        <input name="resultgramsperml" type="text" id="resultgramsperml" class="liquidResult" value="0" readonly>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="calBtns">
+                                <input onclick="ppmcalcall();KW_calcForm('resultgramsperml',100000,-1,'#resultgramsperml');KW_calcForm('resultppmfe',10000,-1,'#resultppmfe');KW_calcForm('resultppmb',10000,-1,'#resultppmb');KW_calcForm('resultppmmn',10000,-1,'#resultppmmn');KW_calcForm('resultppmzn',10000,-1,'#resultppmzn');KW_calcForm('resultppmmo',10000,-1,'#resultppmmo');KW_calcForm('resultppmna',10000,-1,'#resultppmna');KW_calcForm('resultppmcu',10000,-1,'#resultppmcu');KW_calcForm('resultppmcl',10000,-1,'#resultppmcl');KW_calcForm('resultppmco',10000,-1,'#resultppmco');KW_calcForm('resultppmsi',10000,-1,'#resultppmsi');KW_calcForm('resultppmse',10000,-1,'#resultppmse')" type="button" value="Calculate" name="ppmcalcall_button2" class="calcBtn">
+                                <input type="reset" name="Reset2" value="Restore" class="restore">
+                            </div>
+                        
                         </div>
+
+                        <p>
+                            <input onclick="ghmicro()" type="button" value="GH Micro Example" name="ghmicro_button">
+                            <input onclick="ghbloom()" type="button" value="GH Bloom Example" name="ghbloom_button">
+                            <input onclick="ghgrow()" type="button" value="GH Grow Example" name="ghgrow_button">
+                            <input onclick="ppmcalcall()" type="button" value="Extended Decimals" name="ppmcalcall_button">
+                        </p>
+
                     </div>
                 </div>
+
+                <!-- IGNORE -->
+                <p>
+                    <input name="literspergallon" type="hidden" id="literspergallon2" value="3.785">
+                    <input name="mgpergram" type="hidden" id="mgpergram" value="1000">
+                    <input name="percentdiv" type="hidden" id="percentdiv" value="100">
+                    <input name="convp2o5" type="hidden" id="convp2o5" value="0.436">
+                    <input name="convk2o" type="hidden" id="convk2o" value="0.83">
+                    <input name="resultppmn" type="hidden" id="resultppmn3">
+                    <input name="resultppmp" type="hidden" id="resultppmp3">
+                    <input name="resultppmk" type="hidden" id="resultppmk3">
+                    <input name="resultppmmg" type="hidden" id="resultppmmg4">
+                    <input name="resultppms" type="hidden" id="resultppms3">
+                    <input name="resultppmca" type="hidden" id="resultppmca3">
+                    <input name="resultmixingunitsperliter" type="hidden" id="resultmixingunitsperliter2">
+                    <input name="percentn" type="hidden" id="percentn2" size="5">
+                    <input name="resultppmno3" type="hidden" id="resultppmno32" size="4">
+                    <input name="resultppmnh4" type="hidden" id="resultppmnh42" size="4">
+                    <input name="resultppmnh2" type="hidden" id="resultppmnh22" size="4">
+                </p>
 
             </form>
 
         </div>
     </main>
+
+    
 
 </body>
 

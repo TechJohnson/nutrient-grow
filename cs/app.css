@@ -13,6 +13,10 @@ html, body, h1, h2, h3, h4, h5, p {
   margin: 0 auto;
 }
 
+.pt-10 {
+  padding-top: 10px;
+}
+
 #navBar {
   width: 100%;
   background: white;
@@ -169,7 +173,89 @@ html, body, h1, h2, h3, h4, h5, p {
   color: #555555;
 }
 
-#calculator .calcArea .calcResults .resultBox .calcBtn {
+#calculator .calcArea .calcResults .resultBox hr {
+  padding: 0;
+  margin: 20px 0;
+  border: 1px solid #EEEDED;
+}
+
+#calculator .calcArea .calcResults .resultBox .whiteLine {
+  background: white;
+  padding: 5px 20px;
+}
+
+#calculator .calcArea .calcResults .resultBox .grayLine {
+  background: #F7F7F7;
+  padding: 5px 20px;
+}
+
+#calculator .calcArea .calcResults .resultBox .split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#calculator .calcArea .calcResults .resultBox .split .resultTitle {
+  font-weight: 500;
+}
+
+#calculator .calcArea .calcResults .resultBox h3 {
+  color: #14A874;
+  font-size: 1.125rem;
+  padding-bottom: 10px;
+}
+
+#calculator .calcArea .calcResults .resultBox .result {
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  font-size: 1rem;
+  width: 100%;
+  background: none;
+}
+
+#calculator .calcArea .calcResults .resultBox .liquidResult {
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  font-size: 1.125rem;
+  width: 100%;
+  background: none;
+  color: #14A874;
+}
+
+#calculator .calcArea .calcResults .resultBox .calBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#calculator .calcArea .calcResults .resultBox .calBtns .restore {
+  background: #F7F7F7;
+  color: #A6A6A6;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#calculator .calcArea .calcResults .resultBox .calBtns .calcBtn {
   background: #14A874;
   color: white;
   padding: 10px 25px;
@@ -180,12 +266,9 @@ html, body, h1, h2, h3, h4, h5, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
 }
 
-#calculator .calcArea .calcResults .resultBox hr {
-  padding: 0;
-  margin: 20px 0;
-  border: 1px solid #EEEDED;
+g {
+  fill: #000000;
 }
 /*# sourceMappingURL=app.css.map */
