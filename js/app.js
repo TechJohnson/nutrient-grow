@@ -1,3 +1,5 @@
+alert("This calculator is still in production. Results may vary.");
+
 function valueof(str) {
   if (str == "") {
     return 0;
