@@ -218,3 +218,18 @@ html, body, h1, h2, h3, h4, h5, p {
 g {
     fill: #000000;
 }
+
+.extendDec {
+    background: none;
+    font-size: 1rem;
+    border: none;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25px;
+    color: $lightGray;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    &:hover {
+        border-bottom: 1px solid $lightGray;
+    }
+}
