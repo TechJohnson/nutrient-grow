@@ -260,6 +260,13 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+#calculator .calcArea .calcResults .resultBox .calBtns .restore:hover {
+  background: #e5e5e5;
 }
 
 #calculator .calcArea .calcResults .resultBox .calBtns .calcBtn {
@@ -273,6 +280,15 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+#calculator .calcArea .calcResults .resultBox .calBtns .calcBtn:hover {
+  background: #10885e;
+  -webkit-box-shadow: 0px 5px 10px rgba(85, 85, 85, 0.25);
+          box-shadow: 0px 5px 10px rgba(85, 85, 85, 0.25);
 }
 
 g {
