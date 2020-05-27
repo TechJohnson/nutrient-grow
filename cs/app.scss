@@ -239,3 +239,34 @@ g {
     border-bottom: 1px solid $lightGray;
   }
 }
+
+
+
+
+footer {
+  background: linear-gradient($bg, white);
+  padding-bottom: 50px;
+  .logo {
+    width: 200px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  .social {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    img {
+      width: 35px;
+    }
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    p {
+      font-size: 0.75rem;
+      opacity: 0.5;
+    }
+  }
+}
