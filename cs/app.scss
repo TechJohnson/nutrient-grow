@@ -300,3 +300,13 @@ footer {
     }
   }
 }
+
+::selection {
+  background: lighten($primary, 5%);
+  color: white;
+}
+
+::-moz-selection {
+  background: lighten($primary, 50%);
+  color: white;
+}
