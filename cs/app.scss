@@ -240,7 +240,26 @@ g {
   }
 }
 
+.examples {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25px;
+}
 
+.exampleBtn {
+  background: none;
+  border: 1px solid $lightGray;
+  padding: 10px;
+  color: $lightGray;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+  cursor: pointer;
+  &:hover {
+    background: $lightGray;
+    color: white;
+  }
+}
 
 
 footer {

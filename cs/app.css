@@ -297,6 +297,33 @@ g {
   border-bottom: 1px solid #a6a6a6;
 }
 
+.examples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 25px;
+}
+
+.exampleBtn {
+  background: none;
+  border: 1px solid #a6a6a6;
+  padding: 10px;
+  color: #a6a6a6;
+  border-radius: 5px;
+  text-transform: uppercase;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.exampleBtn:hover {
+  background: #a6a6a6;
+  color: white;
+}
+
 footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(white));
   background: linear-gradient(#f7f7f7, white);
